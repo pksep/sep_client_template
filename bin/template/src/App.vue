@@ -1,7 +1,7 @@
 <template>
-  <PushNotification :is-not-app="state.renderApplication" />
+  <PushNotification />
   <div id="nav">
-    <HeadersNav @exit="unAuth" />
+    <HeadersNav />
     <MenuItem :active-menu="activeMenu" />
     <UserActionNotificationsVue />
     <div :class="{ container: true, container__large: state.isCollapsed }">
@@ -28,14 +28,12 @@ import HeadersNav from '@/UI/HeaderNav.vue';
 import MenuItem from '@/components/MenuLeft';
 import { computed, reactive } from 'vue';
 import UserActionNotificationsVue from '@/UI/UserActionNotifications.vue';
-import PushNotification from '@/UI/PushNotification';
-import { useAuthStore } from '@/stores/auth';
+import PushNotification from '@/UI/PushNotification.vue';
 import { RouteLocation, useRoute, useRouter } from 'vue-router';
 import { BreadcrumbsType } from '@/UI/types/breadcrumbs';
 import { useNavigationStore } from './stores/navigation';
 import { useGlobalStore } from '@/stores/global';
 
-const authStore = useAuthStore();
 const route = useRoute();
 const router = useRouter();
 const navigationStore = useNavigationStore();
@@ -76,8 +74,6 @@ const getBreadCrumbs = (route: RouteLocation): BreadcrumbsType => {
 const routesSelect = item => {
   router.push(item);
 };
-
-const unAuth = () => authStore.unAuth();
 </script>
 
 <style src="@vueform/multiselect/themes/default.css"></style>

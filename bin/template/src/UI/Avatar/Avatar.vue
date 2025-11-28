@@ -1,10 +1,10 @@
 <template>
   <YAvatar
-    class="avatar"
-    :url="image"
-    default-image="/img/avatar.svg"
     alt="avatar"
+    class="avatar"
+    default-image="/img/avatar.svg"
     :style="{ '--size-avatar': props.width ? props.width + 'px' : '35px' }"
+    :url="image"
   />
 </template>
 

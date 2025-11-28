@@ -5,8 +5,8 @@
     <template #default>
       <div class="settings-block" data-testid="SettingsPage">
         <router-link
-          :to="{ name: 'main' }"
           data-testid="SettingsPage-Link-Emploee"
+          :to="{ name: 'main' }"
         >
           <Card class="setting-card" data-testid="SettingsPage-Card-Staff">
             <template #default>На главную</template>
@@ -18,16 +18,13 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, reactive } from 'vue';
-import { useAuthStore } from '@/stores/auth';
+import { onMounted, reactive } from 'vue';
 import { Card } from '@pksep/yui';
 import BasePage from '@/components/BasePage/BasePage.vue';
 
-const authStore = useAuthStore();
 const state = reactive({
   blackTheme: false,
-  loader: true,
-  hasRoleAcess: computed(() => authStore.hasRoleAccess)
+  loader: true
 });
 
 onMounted(() => {

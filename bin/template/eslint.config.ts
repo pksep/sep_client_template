@@ -105,7 +105,9 @@ export default defineConfigWithVueTs(
           bracketSpacing: true,
           arrowParens: 'avoid'
         }
-      ]
+      ],
+
+      '@typescript-eslint/no-empty-object-type': 'off'
     }
   },
   skipFormatting

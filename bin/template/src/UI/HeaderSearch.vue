@@ -1,11 +1,11 @@
 <template>
   <div class="header__search" data-testid="Header-Search">
     <YSearch
-      placeholder="Поиск"
+      v-model="state.query"
       data-testid="Header-Search-Input"
+      placeholder="Поиск"
       global
       :global-results-function="searchStore.allResults"
-      v-model="state.query"
       @input="handleSearch"
       @choose-result="chooseResult"
       @scroll-paginate="handlePaginate"
@@ -28,6 +28,8 @@ const state = reactive({
 });
 
 const chooseResult = async (value: ResultSearchType): Promise<void> => {
+  console.log(value);
+
   await router.push(`/`);
   // if (value.banned) {
   //   await router.push({

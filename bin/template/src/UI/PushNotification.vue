@@ -2,12 +2,12 @@
   <template v-if="state.messages.length">
     <template v-for="(msg, inx) of state.messages" :key="inx">
       <YPushNotification
-        :type="getMessageType(msg.type)"
+        :description="msg.message"
         :push-key="inx"
         :style="style(inx)"
-        :title="msg.title"
         :timeout="state.timeout"
-        :description="msg.message"
+        :title="msg.title"
+        :type="getMessageType(msg.type)"
         @close="destroy(msg.id, inx)"
       />
     </template>

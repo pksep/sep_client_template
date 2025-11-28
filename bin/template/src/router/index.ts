@@ -2,7 +2,6 @@ import { nextTick } from 'vue';
 import {
   createRouter,
   createWebHistory,
-  NavigationGuardNext,
   RouteLocationNormalized,
   RouteRecordRaw
 } from 'vue-router';
@@ -30,7 +29,6 @@ router.beforeEach((to, from, next) => {
 
   next();
 });
-
 
 router.afterEach(async (to: RouteLocationNormalized) => {
   const title = to.meta.title || to.name;

@@ -77,14 +77,13 @@
 
 <script setup lang="ts">
 interface IMenuLeft {
-  activeMenu: string;
+  activeMenu?: string;
 }
 
 import { computed, reactive } from 'vue';
 import { useMenuItems } from '@/extensions/items/use-menu-items';
 import { useGlobalStore } from '@/stores/global';
 import { $tt } from '@/utils/translate';
-
 
 const menuItems = useMenuItems;
 const globalStore = useGlobalStore();

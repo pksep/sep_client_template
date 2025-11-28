@@ -2,20 +2,20 @@
   <div class="wrapper" data-testid="NotFound-wrapper">
     <div class="inner" data-testid="NotFound-inner">
       <img
+        alt="404 not found"
+        data-testid="NotFound-image"
+        src="@/assets/img/404-bg.svg"
         style="
           display: block;
           max-width: 100%;
           object-fit: contain;
           margin-bottom: 57px;
         "
-        src="@/assets/img/404-bg.svg"
-        alt="404 not found"
-        data-testid="NotFound-image"
       />
       <div class="button-notfound">
         <YButton @click="goBack">
           <template #left-icon>
-            <YIcon width="20" height="20" name="arrowLeft" />
+            <YIcon height="20" name="arrowLeft" width="20" />
           </template>
           Вернуться
         </YButton>
@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { useRoute, useRouter } from 'vue-router';
 
 const router = useRouter();
