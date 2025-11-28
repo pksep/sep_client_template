@@ -80,13 +80,11 @@ interface IMenuLeft {
   activeMenu: string;
 }
 
-import { useAuthStore } from '@/stores/auth';
 import { computed, reactive } from 'vue';
 import { useMenuItems } from '@/extensions/items/use-menu-items';
 import { useGlobalStore } from '@/stores/global';
 import { $tt } from '@/utils/translate';
 
-const storeAuth = useAuthStore();
 
 const menuItems = useMenuItems;
 const globalStore = useGlobalStore();
@@ -96,7 +94,6 @@ withDefaults(defineProps<IMenuLeft>(), {
 });
 
 const state = reactive({
-  hasAccess: computed(() => storeAuth.hasRoleAccess),
   isCollapsed: computed(() => globalStore.getCollapsedMenu)
 });
 </script>

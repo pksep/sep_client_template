@@ -7,7 +7,6 @@ import {
   RouteRecordRaw
 } from 'vue-router';
 import { routes } from '@/router/routes';
-import { isAuth } from '@/router/modules/auth';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,15 +31,6 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
-router.beforeEach(
-  async (
-    to: RouteLocationNormalized,
-    from: RouteLocationNormalized,
-    next: NavigationGuardNext
-  ) => {
-    await isAuth(to, from, next);
-  }
-);
 
 router.afterEach(async (to: RouteLocationNormalized) => {
   const title = to.meta.title || to.name;
