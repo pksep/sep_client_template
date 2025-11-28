@@ -1,5 +1,5 @@
 {
-  "name": "sep_erp_template",
+  "name": "@pksep/sep-erp-template",
   "version": "1.0.0",
   "description": "template for quick start new project",
   "main": "index.js",
@@ -9,6 +9,14 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pksep/sep_client_template.git"
   },
   "author": "",
   "license": "ISC",
