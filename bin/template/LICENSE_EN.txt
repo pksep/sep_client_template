@@ -1,0 +1,29 @@
+SOFTWARE LICENSE AGREEMENT FOR SEP_ERP_CLIENT
+
+Important:
+Please read the following terms and conditions carefully before using this software.
+Installation, copying, or any other use of this software indicates your agreement to these terms and conditions.
+If you do not agree with the terms of this agreement, you are not authorized to use this software.
+
+1. Agreement Subject:
+This Software License Agreement (hereinafter – Agreement) sets forth the terms of use for the SEP_ERP_Client software,
+including all related materials, documentation, and updates (hereinafter – Software),
+provided by LLC "NPO" AUTOMOTIVE", (hereinafter – Licensor).
+
+2. License:
+The Licensor grants you a non-exclusive, non-transferable right to use the Software only in accordance with the terms of this Agreement.
+
+3. Restrictions:
+You are not allowed to modify, decompile, disassemble, distribute, copy, create derivative works, rent, lease,
+or transfer the Software without the prior written consent of the Licensor.
+
+4. Copyright:
+The Software is protected by international copyright laws and provisions, as well as other laws and regulations related to intellectual property.
+All rights not expressly granted in this Agreement remain with the Licensor.
+
+5. Limited Warranty:
+The Software is provided "as is" without any warranties.
+The Licensor provides no express or implied warranties regarding its operability, quality, or fitness for any particular purpose.
+
+6. Limitation of Liability:
+The Licensor shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use the Software.

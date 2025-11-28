@@ -1,0 +1,24 @@
+.large-table__search {
+  max-width: 590px;
+  height: 40px !important;
+}
+
+button.none {
+  appearance: none;
+  border: 0;
+  text-align: start;
+  outline: none;
+  background: transparent;
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+td.td-popover {
+  padding-left: 5px;
+}
+
+.table-row.active {
+  background-color: var(--blue21);
+}

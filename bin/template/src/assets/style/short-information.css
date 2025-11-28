@@ -1,0 +1,151 @@
+.short-information {
+  display: grid;
+  padding: 30px;
+  gap: 20px;
+}
+
+.short-information__modal {
+  width: 666px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 10;
+}
+
+.short-information__headings {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.short-information__information {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 10px;
+  margin-top: -10px;
+
+  & .short-information__information-text {
+    display: block;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+
+    & svg {
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+  }
+
+  & span {
+    font-size: 18px;
+  }
+
+  & .short-information__information-title {
+    color: var(--text-blue);
+  }
+
+  & input {
+    margin-top: 2px;
+  }
+}
+
+.short-information__category {
+  display: grid;
+  gap: 15px;
+}
+
+.short-information__category-title {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.short-information__media {
+  margin-bottom: -10px;
+}
+
+.short-information__characteristic-border {
+  border: 0.5px solid var(--grey3);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+.short-information__characteristic {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  align-items: center;
+
+  &:first-child .short-information__characteristic-title {
+    border-top-left-radius: 15px;
+  }
+
+  &:last-child .short-information__characteristic-title {
+    border-bottom-left-radius: 15px;
+  }
+
+  & .short-information__characteristic-title {
+    padding: 11.5px 8px;
+    background: var(--blue9);
+    font-size: 14px;
+    border-right: 0.5px solid var(--grey3);
+    font-weight: bold;
+    color: #1d2433;
+  }
+
+  & .short-information__characteristic-items {
+    justify-self: center;
+  }
+}
+
+.specification {
+  padding-inline: 0;
+  --margin: 0;
+}
+
+.short-information__specification {
+  margin-top: -5px;
+  --width: 100%;
+  --justify: stretch;
+}
+
+.short-information__btns {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto auto min-content;
+  gap: 10px;
+
+  button.button-yui-kit {
+    justify-content: center;
+    padding-block: 7px;
+    font-size: 14px;
+  }
+}
+
+.short-information__btn-last {
+  justify-content: center;
+  margin-top: -5px;
+}
+
+.short-information__textarea {
+  margin-top: -5px;
+}
+
+.short-information__btns-icon {
+  padding: 8px 12px;
+}
+
+.short-information__slider {
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+
+fieldset.input-yui-kit.readonly {
+  --background: var(--blue15);
+
+  & :deep(textarea.input-yui-kit__input) {
+    border: 0;
+    border-radius: 5px;
+  }
+}

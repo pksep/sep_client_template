@@ -1,0 +1,48 @@
+.order-filter-wrapper__filters {
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-column: filters;
+  justify-content: start;
+  gap: 10px;
+}
+
+.order-filter__section {
+  grid-column: table;
+  padding: 15px;
+  background: var(--white);
+  overflow-x: hidden;
+  max-width: calc(100vw - 265px - var(--offset));
+  border-radius: 10px;
+}
+
+.order-filter {
+  overflow: hidden;
+  padding-block: 9px;
+  grid-area: filter;
+  --order-filter-table-height: calc(100vh - 330px);
+}
+
+.order-filter-wrapper__filters {
+  &:deep(.select-list-yui-kit.parent-filter) {
+    --width: 400px;
+  }
+}
+
+.order-filter__with-filters:has(.order-filter_open) {
+  grid-template-areas:
+    'filter filters'
+    'filter table'
+    'filter footer';
+}
+
+.order-filter__with-filters {
+  --order-filter-size: 450px;
+  display: grid;
+  grid-template-columns: var(--order-filter-size) auto;
+  row-gap: 15px;
+  column-gap: 10px;
+  grid-template-areas:
+    'filter filters'
+    'table table'
+    'footer footer';
+}

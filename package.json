@@ -1,0 +1,19 @@
+{
+  "name": "sep_erp_template",
+  "version": "1.0.0",
+  "description": "template for quick start new project",
+  "main": "index.js",
+  "bin": {
+    "create-sep-erp-app": "bin/create-app.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "process": "^0.11.10",
+    "prompts": "^2.4.2"
+  }
+}
